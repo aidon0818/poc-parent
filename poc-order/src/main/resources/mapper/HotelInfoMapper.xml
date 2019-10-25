@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.poc.demo.mapper.HotelInfoMapper">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.poc.demo.entity.HotelInfo" id="hotelInfoMap">
+        <result property="rowId" column="row_id"/>
+        <result property="hotelId" column="hotel_id"/>
+        <result property="hotelName" column="hotel_name"/>
+        <result property="hotelDesc" column="hotel_desc"/>
+        <result property="hotelPrice" column="hotel_price"/>
+        <result property="hotelVipPrice" column="hotel_vip_price"/>
+        <result property="hotelBeginTime" column="hotel_begin_time"/>
+        <result property="hotelEndTime" column="hotel_end_time"/>
+        <result property="hotelBreakfast" column="hotel_breakfast"/>
+        <result property="hotelPersonNum" column="hotel_person_num"/>
+        <result property="hotelBedType" column="hotel_bed_type"/>
+        <result property="hotelAcreage" column="hotel_acreage"/>
+        <result property="hotelFloor" column="hotel_floor"/>
+        <result property="hotelScenery" column="hotel_scenery"/>
+        <result property="hotelWindow" column="hotel_window"/>
+        <result property="hotelIfBeds" column="hotel_if_beds"/>
+        <result property="hotelDeposit" column="hotel_deposit"/>
+        <result property="hotelIntegral" column="hotel_integral"/>
+        <result property="hotelRemark" column="hotel_remark"/>
+        <result property="hotelEnclosure" column="hotel_enclosure"/>
+        <result property="hotelIfCancel" column="hotel_if_cancel"/>
+        <result property="hotelIfCancelCode" column="hotel_if_cancel_code"/>
+        <result property="hotelStock" column="hotel_stock"/>
+        <result property="hotelPic" column="hotel_pic"/>
+        <result property="status" column="status"/>
+        <result property="version" column="version"/>
+    </resultMap>
+
+</mapper>

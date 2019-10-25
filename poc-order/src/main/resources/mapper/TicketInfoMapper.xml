@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.poc.demo.mapper.TicketInfoMapper">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.poc.demo.entity.TicketInfo" id="ticketInfoMap">
+        <result property="rowId" column="row_id"/>
+        <result property="parkId" column="park_id"/>
+        <result property="parkName" column="park_name"/>
+        <result property="tId" column="t_id"/>
+        <result property="tCode" column="t_code"/>
+        <result property="tName" column="t_name"/>
+        <result property="tType" column="t_type"/>
+        <result property="tKind" column="t_kind"/>
+        <result property="tDes" column="t_des"/>
+        <result property="tvType" column="tv_type"/>
+        <result property="tvDay" column="tv_day"/>
+        <result property="tsDate" column="ts_date"/>
+        <result property="tPrice" column="t_price"/>
+        <result property="tVipPrice" column="t_vip_price"/>
+        <result property="teDate" column="te_date"/>
+        <result property="tNotice" column="t_notice"/>
+        <result property="tsTime" column="ts_time"/>
+        <result property="teTime" column="te_time"/>
+        <result property="tsMinnum" column="ts_minnum"/>
+        <result property="tsMaxnum" column="ts_maxnum"/>
+        <result property="tvDelay" column="tv_delay"/>
+        <result property="tIsrefund" column="t_isrefund"/>
+        <result property="trDays" column="tr_days"/>
+        <result property="toRefund" column="to_refund"/>
+        <result property="toDays" column="to_days"/>
+        <result property="trequireIdcard" column="trequire_idcard"/>
+        <result property="trepId" column="trep_id"/>
+        <result property="trepName" column="trep_name"/>
+        <result property="trepContent" column="trep_content"/>
+        <result property="tareaId" column="tarea_id"/>
+        <result property="tareaName" column="tarea_name"/>
+        <result property="verifs" column="verifs"/>
+        <result property="verifCount" column="verif_count"/>
+        <result property="status" column="status"/>
+        <result property="version" column="version"/>
+    </resultMap>
+
+</mapper>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.poc.demo.mapper.OrderFinishInfoMapper">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.poc.demo.entity.OrderFinishInfo" id="orderFinishInfoMap">
+        <result property="rowId" column="row_id"/>
+        <result property="itemType" column="item_type"/>
+        <result property="orderId" column="order_id"/>
+        <result property="orderNo" column="order_no"/>
+        <result property="orderThirdpartyNo" column="order_thirdparty_no"/>
+        <result property="itemId" column="item_id"/>
+        <result property="dorderitemsThirdpartyid" column="dorderitems_thirdpartyid"/>
+        <result property="orderOwnerid" column="order_ownerid"/>
+        <result property="orderitemsAmout" column="orderitems_amout"/>
+        <result property="productName" column="product_name"/>
+        <result property="itemtype" column="itemType"/>
+        <result property="eCode" column="e_code"/>
+        <result property="version" column="version"/>
+    </resultMap>
+
+</mapper>

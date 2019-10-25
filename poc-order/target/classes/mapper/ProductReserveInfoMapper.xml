@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.poc.demo.mapper.ProductReserveInfoMapper">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.poc.demo.entity.ProductReserveInfo" id="productReserveInfoMap">
+        <result property="rowId" column="row_id"/>
+        <result property="operaName" column="opera_name"/>
+        <result property="areaName" column="area_name"/>
+        <result property="locName" column="loc_name"/>
+        <result property="showStime" column="show_stime"/>
+        <result property="showEtime" column="show_etime"/>
+        <result property="seaTid" column="sea_tid"/>
+        <result property="seatrowColnum" column="seatrow_colnum"/>
+        <result property="thirditemId" column="thirdItem_id"/>
+        <result property="version" column="version"/>
+    </resultMap>
+
+</mapper>

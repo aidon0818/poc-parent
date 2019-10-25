@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.poc.demo.mapper.ProductInfoMapper">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.poc.demo.entity.ProductInfo" id="productInfoMap">
+        <result property="rowId" column="row_id"/>
+        <result property="parkId" column="park_id"/>
+        <result property="parkName" column="park_name"/>
+        <result property="tId" column="t_id"/>
+        <result property="tCode" column="t_code"/>
+        <result property="tName" column="t_name"/>
+        <result property="tPdtprice" column="t_pdtprice"/>
+        <result property="tDispdtprice" column="t_dispdtprice"/>
+        <result property="tLocid" column="t_locid"/>
+        <result property="tLocname" column="t_locname"/>
+        <result property="tShowid" column="t_showid"/>
+        <result property="tShowsdate" column="t_showsdate"/>
+        <result property="tShowedate" column="t_showedate"/>
+        <result property="tShowstime" column="t_showstime"/>
+        <result property="tShowetime" column="t_showetime"/>
+        <result property="hotelSdate" column="hotel_sdate"/>
+        <result property="hotelEdate" column="hotel_edate"/>
+        <result property="dPdate" column="d_pdate"/>
+        <result property="trepId" column="trep_id"/>
+        <result property="tareas" column="tareas"/>
+        <result property="verifCount" column="verif_count"/>
+        <result property="status" column="status"/>
+        <result property="version" column="version"/>
+    </resultMap>
+
+</mapper>

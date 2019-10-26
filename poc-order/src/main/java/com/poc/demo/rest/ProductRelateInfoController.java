@@ -2,7 +2,9 @@ package com.poc.demo.rest;
 
 import com.alibaba.fastjson.JSONObject;
 import com.github.wxiaoqi.security.common.rest.BaseController;
+import com.poc.demo.biz.ProductInfoBiz;
 import com.poc.demo.biz.ProductRelateInfoBiz;
+import com.poc.demo.entity.ProductInfo;
 import com.poc.demo.entity.ProductRelateInfo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,25 +22,5 @@ import java.util.List;
 @RequestMapping("productRelateInfo")
 public class ProductRelateInfoController extends BaseController<ProductRelateInfoBiz, ProductRelateInfo> {
 	private static Logger logger = LoggerFactory.getLogger(ProductRelateInfoController.class);
-	@Autowired
-	private ProductRelateInfoBiz productRelateInfoBiz;
 
-	/**
-	 * 功能描述:根据产品id查询所有商品
-	 *
-	 * @param:
-	 * @return:
-	 * @auther: LiuDong
-	 * @date: 10:30 2019/10/26
-	 */
-	@RequestMapping(value = "/selectProductRelateInfosByproductId/{productId}", method = RequestMethod.GET)
-	public String selectProductRelateInfosByproductId(@PathVariable String productId) {
-		logger.info("根据产品id查询所有商品");
-		String rtn = "";
-		JSONObject object = new JSONObject();
-		List<ProductRelateInfo> infos = productRelateInfoBiz.selectProductRelateInfosByproductId(productId);
-		object.put("obj", infos);
-		rtn = object.toJSONString();
-		return rtn;
-	}
 }

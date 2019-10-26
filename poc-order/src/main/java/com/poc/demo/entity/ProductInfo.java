@@ -103,6 +103,9 @@ public class ProductInfo implements Serializable {
 	    //可入园次数,默认等于门票的入园次数
     @Column(name = "verif_count")
     private Integer verifCount;
+	//是否允许自助退款；0-不可以，1-可以
+    @Column(name = "if_refund")
+	private Integer ifRefund;
 	
 	    //状态：0-无效 ，1-有效
     @Column(name = "status")
@@ -388,5 +391,13 @@ public class ProductInfo implements Serializable {
 	 */
 	public Integer getVersion() {
 		return version;
+	}
+
+	public Integer getIfRefund() {
+		return ifRefund;
+	}
+
+	public void setIfRefund(Integer ifRefund) {
+		this.ifRefund = ifRefund;
 	}
 }

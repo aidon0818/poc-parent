@@ -5,8 +5,9 @@ import com.poc.demo.biz.HotelInfoBiz;
 import com.poc.demo.entity.HotelInfo;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-@Controller
+@RestController
 @RequestMapping("hotelInfo")
 public class HotelInfoController extends BaseController<HotelInfoBiz,HotelInfo> {
 

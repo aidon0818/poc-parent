@@ -1,5 +1,7 @@
 package com.poc.demo.entity;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
@@ -66,18 +68,22 @@ public class ProductInfo implements Serializable {
 	
 	    //场次开始日期
     @Column(name = "t_showsdate")
+	@JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private Date tShowsdate;
 	
 	    //场次结束日期
     @Column(name = "t_showedate")
+	@JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private Date tShowedate;
 	
 	    //演出开始时间
     @Column(name = "t_showstime")
+	@JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private String tShowstime;
 	
 	    //演出结束时间
     @Column(name = "t_showetime")
+	@JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private String tShowetime;
 	
 	    //酒店开始时间

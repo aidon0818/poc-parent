@@ -1,15 +1,12 @@
 package com.poc.demo.biz;
 
-import com.poc.demo.entity.ProductRelateInfo;
-import com.poc.demo.mapper.ProductRelateInfoMapper;
+import com.github.wxiaoqi.security.common.biz.BaseBiz;
+import com.poc.demo.entity.TicketInfo;
+import com.poc.demo.mapper.TicketInfoMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import com.poc.demo.entity.TicketInfo;
-import com.poc.demo.mapper.TicketInfoMapper;
-import com.github.wxiaoqi.security.common.biz.BaseBiz;
 import tk.mybatis.mapper.entity.Example;
 
 import java.util.ArrayList;
